@@ -539,8 +539,8 @@ MonoBehaviour:
   sourceProjectPath: ../../FMOD/Projects/Fmod Integration 1/Fmod Integration 1.fspro
   sourceBankPath: ../../FMOD/Projects/Fmod Integration 1/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
-  ShowBankRefreshWindow: 1
+  BankRefreshCooldown: 1
+  ShowBankRefreshWindow: 0
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
@@ -562,6 +562,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Global Music
+  - Level 1
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
