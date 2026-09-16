@@ -99038,11 +99038,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 774411158
-      Data2: 1097601875
-      Data3: 1776761216
-      Data4: 1682993155
-    Path: event:/BarrelHit
+      Data1: 776958154
+      Data2: 1089697738
+      Data3: 1883673478
+      Data4: -1286601008
+    Path: event:/SFX/Coin/CoinCollect
   Event: 
   EventPlayTrigger: 5
   EventStopTrigger: 0
@@ -248549,11 +248549,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 774411158
-      Data2: 1097601875
-      Data3: 1776761216
-      Data4: 1682993155
-    Path: event:/BarrelHit
+      Data1: 776958154
+      Data2: 1089697738
+      Data3: 1883673478
+      Data4: -1286601008
+    Path: event:/SFX/Coin/CoinCollect
   Event: 
   EventPlayTrigger: 5
   EventStopTrigger: 0
