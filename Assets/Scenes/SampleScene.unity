@@ -98683,7 +98683,6 @@ GameObject:
   - component: {fileID: 621969162}
   - component: {fileID: 621969161}
   - component: {fileID: 621969160}
-  - component: {fileID: 621969163}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -98707,6 +98706,11 @@ MonoBehaviour:
   Emitters:
   - Target: {fileID: 1754240612}
     Params:
+    - Name: wind_intensity
+      Value: 0.391
+      ID:
+        data1: 0
+        data2: 0
     - Name: Area
       Value: 1
       ID:
@@ -98781,35 +98785,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &621969163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621969159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
-  CollisionTag: Player
-  Emitters:
-  - Target: {fileID: 1754240612}
-    Params:
-    - Name: wind_intensity
-      Value: 0.385
-      ID:
-        data1: 0
-        data2: 0
-    - Name: Area
-      Value: 1
-      ID:
-        data1: 0
-        data2: 0
-  - Target: {fileID: 1754240611}
-    Params: []
-  TriggerEvent: 5
 --- !u!1 &628321268
 GameObject:
   m_ObjectHideFlags: 0
@@ -100800,6 +100775,119 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &726797365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726797369}
+  - component: {fileID: 726797368}
+  - component: {fileID: 726797367}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &726797367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726797365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
+  CollisionTag: Player
+  Emitters:
+  - Target: {fileID: 1754240612}
+    Params:
+    - Name: wind_intensity
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
+    - Name: Area
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
+  - Target: {fileID: 1754240611}
+    Params:
+    - Name: Area
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
+  TriggerEvent: 5
+--- !u!61 &726797368
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726797365}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.08958933, y: 0.30183327}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.42806238, y: 0.58118093}
+  m_EdgeRadius: 0
+--- !u!4 &726797369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726797365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.94, y: -0.16, z: 0}
+  m_LocalScale: {x: 10.900692, y: 6.424362, z: 3.3158}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &739615150
 GameObject:
   m_ObjectHideFlags: 0
@@ -256540,3 +256628,4 @@ SceneRoots:
   - {fileID: 395934702}
   - {fileID: 1174410902}
   - {fileID: 621969162}
+  - {fileID: 726797369}

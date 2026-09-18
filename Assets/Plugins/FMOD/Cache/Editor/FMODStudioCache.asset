@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9034154324323540756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Global Music.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Global Music.bank
+  Name: Global Music
+  StudioPath: bank:/Global Music
+  lastModified: 639243085869293414
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
 --- !u!114 &-8775898839675085805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20,6 +40,61 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1332
   Exists: 1
+--- !u!114 &-8300108735288939986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Coin/CoinIdle
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Coin/CoinIdle
+  Guid:
+    Data1: 1786388041
+    Data2: 1181473709
+    Data3: 1573162420
+    Data4: 1464259889
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5080
+--- !u!114 &-8230815396531923549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wind
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Wind
+  Guid:
+    Data1: 1634888762
+    Data2: 1252183833
+    Data3: -903729772
+    Data4: 1661377560
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 346429445462567806}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10300
 --- !u!114 &-7549080617504179514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +166,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4754392596963742314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639252818659855236
+  FileSizes:
+  - Name: Desktop
+    Value: 147520
+  Exists: 1
 --- !u!114 &-4367599099646590490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +233,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3454272
   Exists: 1
+--- !u!114 &-2722590046555352761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639252818658981070
+  FileSizes:
+  - Name: Desktop
+    Value: 1332
+  Exists: 1
 --- !u!114 &-263384669479270590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,24 +286,24 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: -8775898839675085805}
-  - {fileID: -263384669479270590}
-  - {fileID: -3067821678838634266}
-  - {fileID: 3739824720243518931}
-  - {fileID: -6790167092069844840}
+  - {fileID: -2722590046555352761}
+  - {fileID: -9034154324323540756}
+  - {fileID: 7039610869780268161}
+  - {fileID: 8980076389035541340}
+  - {fileID: -4754392596963742314}
   EditorEvents:
-  - {fileID: 1787825907952121856}
-  - {fileID: 6850983478416263341}
-  - {fileID: -7549080617504179514}
-  - {fileID: 1664783270099216706}
-  - {fileID: -4367599099646590490}
+  - {fileID: -8230815396531923549}
+  - {fileID: 5798873304769958664}
+  - {fileID: -8300108735288939986}
+  - {fileID: 5157408558423900621}
+  - {fileID: 6149358246528639225}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3739824720243518931}
+  - {fileID: 8980076389035541340}
   StringsBanks:
-  - {fileID: -8775898839675085805}
+  - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639251714623342319
+  cacheTime: 639252818659855236
   SerializableEventsDict:
   - key: event:/Ambience/Wind
     index: 0
@@ -200,6 +315,30 @@ MonoBehaviour:
     index: 3
   - key: event:/SFX/Coin/CoinCollect
     index: 4
+--- !u!114 &346429445462567806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wind/wind_intensity
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: wind_intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4095315138
+    data2: 2906747256
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1664783270099216706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +414,114 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1524
   Exists: 1
+--- !u!114 &5157408558423900621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Footsteps
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Character/Footsteps
+  Guid:
+    Data1: -495225495
+    Data2: 1337673954
+    Data3: -351260737
+    Data4: -1497736484
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &5798873304769958664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Level1Music
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/Level1Music
+  Guid:
+    Data1: -769320470
+    Data2: 1128337648
+    Data3: -1533017471
+    Data4: -566218956
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6484394351754981026}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6149358246528639225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Coin/CoinCollect
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Coin/CoinCollect
+  Guid:
+    Data1: 776958154
+    Data2: 1089697738
+    Data3: 1883673478
+    Data4: -1286601008
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6484394351754981026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Level1Music/Area
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Area
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3012197990
+    data2: 1685133433
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Area 1
+  - Area 2
+  Exists: 1
 --- !u!114 &6840449351350582142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,3 +576,43 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7039610869780268161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Level 1.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Level 1.bank
+  Name: Level 1
+  StudioPath: bank:/Level 1
+  lastModified: 639252818658958269
+  FileSizes:
+  - Name: Desktop
+    Value: 3454976
+  Exists: 1
+--- !u!114 &8980076389035541340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639252818658979171
+  FileSizes:
+  - Name: Desktop
+    Value: 1524
+  Exists: 1

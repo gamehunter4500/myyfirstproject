@@ -536,8 +536,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD/Projects/Fmod Integration 1/Fmod Integration 1.fspro
-  sourceBankPath: ../../FMOD/Projects/Fmod Integration 1/Build
+  sourceProjectPath: ../../FMOD/Projects/FmodIntegration1:MyProject/FmodIntegration1.fspro
+  sourceBankPath: ../../FMOD/Projects/FmodIntegration1:MyProject/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 1
   ShowBankRefreshWindow: 0
