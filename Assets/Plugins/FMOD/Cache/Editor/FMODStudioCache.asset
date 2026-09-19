@@ -181,10 +181,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639254206282005171
+  lastModified: 639254319530410490
   FileSizes:
   - Name: Desktop
-    Value: 148224
+    Value: 170912
   Exists: 1
 --- !u!114 &-4367599099646590490
 MonoBehaviour:
@@ -248,10 +248,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639254188699295214
+  lastModified: 639254283746163288
   FileSizes:
   - Name: Desktop
-    Value: 1384
+    Value: 1490
   Exists: 1
 --- !u!114 &-263384669479270590
 MonoBehaviour:
@@ -297,13 +297,15 @@ MonoBehaviour:
   - {fileID: -8300108735288939986}
   - {fileID: 5157408558423900621}
   - {fileID: 6149358246528639225}
+  - {fileID: 5638324333182692303}
+  - {fileID: 1469282142319417169}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8980076389035541340}
   StringsBanks:
   - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639254206282005171
+  cacheTime: 639254319530410490
   SerializableEventsDict:
   - key: event:/Ambience/Wind
     index: 0
@@ -315,6 +317,10 @@ MonoBehaviour:
     index: 3
   - key: event:/SFX/Coin/CoinCollect
     index: 4
+  - key: event:/SFX/Enemy/EnemyFall
+    index: 5
+  - key: event:/SFX/Enemy/EnemyCrush
+    index: 6
 --- !u!114 &346429445462567806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +345,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1469282142319417169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy/EnemyCrush
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Enemy/EnemyCrush
+  Guid:
+    Data1: -8053677
+    Data2: 1278382201
+    Data3: -941224282
+    Data4: -1843078135
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1664783270099216706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +474,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &5638324333182692303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy/EnemyFall
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Enemy/EnemyFall
+  Guid:
+    Data1: 282718506
+    Data2: 1273734646
+    Data3: 83860110
+    Data4: -2083110449
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &5798873304769958664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +671,7 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639254188699289695
+  lastModified: 639254283746158140
   FileSizes:
   - Name: Desktop
     Value: 1524
