@@ -142,6 +142,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 147520
   Exists: 1
+--- !u!114 &-5544492266297940886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dialogue/MainMenu
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Dialogue/MainMenu
+  Guid:
+    Data1: -1216410310
+    Data2: 1126181636
+    Data3: 406068100
+    Data4: 871196457
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1859
 --- !u!114 &-5349433638535307191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +193,32 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4755925082688145374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/global_underwater
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: global_underwater
+  StudioPath: parameter:/global_underwater
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1047445652
+    data2: 982146612
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Above Water
+  - Below Water
+  Exists: 1
 --- !u!114 &-4754392596963742314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,10 +234,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639254319530410490
+  lastModified: 639257786877407234
   FileSizes:
   - Name: Desktop
-    Value: 170912
+    Value: 187808
   Exists: 1
 --- !u!114 &-4367599099646590490
 MonoBehaviour:
@@ -213,6 +266,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3980964385709676078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AdaptiveMusic2/Layer Chooser
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Layer Chooser
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3265533267
+    data2: 2671205080
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3067821678838634266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,10 +325,62 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639254283746163288
+  lastModified: 639258676002360714
   FileSizes:
   - Name: Desktop
-    Value: 1490
+    Value: 1776
+  Exists: 1
+--- !u!114 &-1450713448502038457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AdaptiveMusic2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/AdaptiveMusic2
+  Guid:
+    Data1: 185644193
+    Data2: 1274160100
+    Data3: -1928523121
+    Data4: 1622989192
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3980964385709676078}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 108868
+--- !u!114 &-524785698078855599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/group_intensity
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: group_intensity
+  StudioPath: parameter:/group_intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1659339836
+    data2: 3942884362
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-263384669479270590
 MonoBehaviour:
@@ -299,13 +428,17 @@ MonoBehaviour:
   - {fileID: 6149358246528639225}
   - {fileID: 5638324333182692303}
   - {fileID: 1469282142319417169}
-  EditorParameters: []
+  - {fileID: -5544492266297940886}
+  - {fileID: -1450713448502038457}
+  EditorParameters:
+  - {fileID: -4755925082688145374}
+  - {fileID: -524785698078855599}
   MasterBanks:
   - {fileID: 8980076389035541340}
   StringsBanks:
   - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639254319530410490
+  cacheTime: 639258676002360714
   SerializableEventsDict:
   - key: event:/Ambience/Wind
     index: 0
@@ -321,6 +454,10 @@ MonoBehaviour:
     index: 5
   - key: event:/SFX/Enemy/EnemyCrush
     index: 6
+  - key: event:/SFX/Dialogue/MainMenu
+    index: 7
+  - key: event:/Music/AdaptiveMusic2
+    index: 8
 --- !u!114 &346429445462567806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,10 +788,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Level 1.bank
   Name: Level 1
   StudioPath: bank:/Level 1
-  lastModified: 639254154646801850
+  lastModified: 639258676002325071
   FileSizes:
   - Name: Desktop
-    Value: 3454976
+    Value: 5565216
   Exists: 1
 --- !u!114 &8980076389035541340
 MonoBehaviour:
@@ -671,8 +808,8 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639254283746158140
+  lastModified: 639258676002357874
   FileSizes:
   - Name: Desktop
-    Value: 1524
+    Value: 3548
   Exists: 1
