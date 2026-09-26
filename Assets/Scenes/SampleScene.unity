@@ -98718,6 +98718,11 @@ MonoBehaviour:
         data2: 0
   - Target: {fileID: 1754240611}
     Params:
+    - Name: layer_chooser
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
     - Name: Layer Chooser
       Value: 1
       ID:
@@ -100858,6 +100863,11 @@ MonoBehaviour:
         data2: 0
   - Target: {fileID: 1754240611}
     Params:
+    - Name: layer_chooser
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
     - Name: Layer Chooser
       Value: 0
       ID:
@@ -248048,7 +248058,7 @@ GameObject:
   - component: {fileID: 1433347354}
   - component: {fileID: 1433347353}
   m_Layer: 0
-  m_Name: Area2 (1)
+  m_Name: Area2.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248082,6 +248092,11 @@ MonoBehaviour:
         data2: 0
   - Target: {fileID: 1754240611}
     Params:
+    - Name: layer_chooser
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
     - Name: Layer Chooser
       Value: 1
       ID:
@@ -251291,11 +251306,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 185644193
-      Data2: 1274160100
-      Data3: -1928523121
-      Data4: 1622989192
-    Path: event:/Music/AdaptiveMusic2
+      Data1: -1101341629
+      Data2: 1121761091
+      Data3: 370083741
+      Data4: -1369876380
+    Path: event:/Music/AdaptiveMusic
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -251303,12 +251318,7 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   NonRigidbodyVelocity: 0
-  Params:
-  - Name: Layer Chooser
-    Value: 0
-    ID:
-      data1: 0
-      data2: 0
+  Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -256109,6 +256119,11 @@ MonoBehaviour:
         data2: 0
   - Target: {fileID: 1754240611}
     Params:
+    - Name: layer_chooser
+      Value: 2
+      ID:
+        data1: 0
+        data2: 0
     - Name: Layer Chooser
       Value: 2
       ID:

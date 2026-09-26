@@ -203,10 +203,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/global_underwater
+  m_Name: parameter:/UnderWater_Volume
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: global_underwater
-  StudioPath: parameter:/global_underwater
+  Name: UnderWater_Volume
+  StudioPath: parameter:/GLOBAL/UnderWater_Volume
   Min: 0
   Max: 1
   Default: 0
@@ -234,10 +234,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639257786877407234
+  lastModified: 639260522325204080
   FileSizes:
   - Name: Desktop
-    Value: 187808
+    Value: 191360
   Exists: 1
 --- !u!114 &-4367599099646590490
 MonoBehaviour:
@@ -266,7 +266,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3980964385709676078
+--- !u!114 &-3867145629552890880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,19 +276,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/AdaptiveMusic2/Layer Chooser
+  m_Name: parameter:/game_pause
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Layer Chooser
-  StudioPath: 
+  Name: game_pause
+  StudioPath: parameter:/Game_pause
   Min: 0
-  Max: 10
+  Max: 1
   Default: 0
   ID:
-    data1: 3265533267
-    data2: 2671205080
-  Type: 1
-  IsGlobal: 0
-  Labels: []
+    data1: 1569594320
+    data2: 2547192869
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Running
+  - Paused
   Exists: 1
 --- !u!114 &-3067821678838634266
 MonoBehaviour:
@@ -325,40 +327,12 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639258676002360714
+  lastModified: 639260530755212493
   FileSizes:
   - Name: Desktop
-    Value: 1776
+    Value: 2050
   Exists: 1
---- !u!114 &-1450713448502038457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/AdaptiveMusic2
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Music/AdaptiveMusic2
-  Guid:
-    Data1: 185644193
-    Data2: 1274160100
-    Data3: -1928523121
-    Data4: 1622989192
-  Banks:
-  - {fileID: 7039610869780268161}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -3980964385709676078}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 108868
---- !u!114 &-524785698078855599
+--- !u!114 &-2199071914965700011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,19 +342,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/group_intensity
+  m_Name: parameter:/Overworld_Volume
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: group_intensity
-  StudioPath: parameter:/group_intensity
+  Name: Overworld_Volume
+  StudioPath: parameter:/GLOBAL/Overworld_Volume
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1659339836
-    data2: 3942884362
+    data1: 3529861580
+    data2: 4129804739
   Type: 0
   IsGlobal: 1
   Labels: []
+  Exists: 1
+--- !u!114 &-1747004785342648214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PauseState/game_pause
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: game_pause
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1569594320
+    data2: 2547192869
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Running
+  - Paused
   Exists: 1
 --- !u!114 &-263384669479270590
 MonoBehaviour:
@@ -429,16 +429,20 @@ MonoBehaviour:
   - {fileID: 5638324333182692303}
   - {fileID: 1469282142319417169}
   - {fileID: -5544492266297940886}
-  - {fileID: -1450713448502038457}
+  - {fileID: 1577419812040743394}
+  - {fileID: 9115911866834935389}
+  - {fileID: 5797402963503385222}
+  - {fileID: 92015819632052104}
   EditorParameters:
   - {fileID: -4755925082688145374}
-  - {fileID: -524785698078855599}
+  - {fileID: -2199071914965700011}
+  - {fileID: -3867145629552890880}
   MasterBanks:
   - {fileID: 8980076389035541340}
   StringsBanks:
   - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639258676002360714
+  cacheTime: 639260530755212493
   SerializableEventsDict:
   - key: event:/Ambience/Wind
     index: 0
@@ -456,8 +460,41 @@ MonoBehaviour:
     index: 6
   - key: event:/SFX/Dialogue/MainMenu
     index: 7
-  - key: event:/Music/AdaptiveMusic2
+  - key: event:/Music/AdaptiveMusic
     index: 8
+  - key: event:/SFX/Character/Crouch1
+    index: 9
+  - key: event:/Game State/PauseState
+    index: 10
+  - key: snapshot:/Game Pause
+    index: 11
+--- !u!114 &92015819632052104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Game Pause
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Game Pause
+  Guid:
+    Data1: 714153158
+    Data2: 1074254243
+    Data3: 754926525
+    Data4: 888980619
+  Banks:
+  - {fileID: 8980076389035541340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &346429445462567806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +546,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1577419812040743394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AdaptiveMusic
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/AdaptiveMusic
+  Guid:
+    Data1: -1101341629
+    Data2: 1121761091
+    Data3: 370083741
+    Data4: -1369876380
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6321050248389163608}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 108868
 --- !u!114 &1664783270099216706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,6 +703,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &5797402963503385222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game State/PauseState
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Game State/PauseState
+  Guid:
+    Data1: 419880296
+    Data2: 1154064385
+    Data3: -1940903529
+    Data4: -2007054279
+  Banks:
+  - {fileID: 8980076389035541340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1747004785342648214}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5798873304769958664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +786,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6321050248389163608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AdaptiveMusic/layer_chooser
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: layer_chooser
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3265533267
+    data2: 2671205080
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6484394351754981026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,10 +905,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Level 1.bank
   Name: Level 1
   StudioPath: bank:/Level 1
-  lastModified: 639258676002325071
+  lastModified: 639260522324978674
   FileSizes:
   - Name: Desktop
-    Value: 5565216
+    Value: 5572992
   Exists: 1
 --- !u!114 &8980076389035541340
 MonoBehaviour:
@@ -808,8 +925,35 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639258676002357874
+  lastModified: 639260530755207455
   FileSizes:
   - Name: Desktop
-    Value: 3548
+    Value: 6814
   Exists: 1
+--- !u!114 &9115911866834935389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Character/Crouch1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Character/Crouch1
+  Guid:
+    Data1: -906903449
+    Data2: 1142267734
+    Data3: 824445584
+    Data4: 756269420
+  Banks:
+  - {fileID: -4754392596963742314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
