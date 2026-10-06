@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
   Path: event:/Music/Level1Music
   Guid:
-    Data1: -769320470
-    Data2: 1128337648
-    Data3: -1533017471
-    Data4: -566218956
+    Data1: 860277574
+    Data2: 1116758943
+    Data3: -300995448
+    Data4: 1133246467
   Banks:
   - {fileID: 7039610869780268161}
   IsStream: 1
@@ -25,6 +25,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 4421531581795841433}
+  - {fileID: 2976974858906206092}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -432,10 +433,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639268975038841365
+  lastModified: 639269205619484791
   FileSizes:
   - Name: Desktop
-    Value: 2414
+    Value: 2458
   Exists: 1
 --- !u!114 &-2199071914965700011
 MonoBehaviour:
@@ -461,6 +462,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-2126227271144120210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/TutorialMusic
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/TutorialMusic
+  Guid:
+    Data1: -769320470
+    Data2: 1128337648
+    Data3: -1533017471
+    Data4: -566218956
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8445739962503365343}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1747004785342648214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,6 +682,7 @@ MonoBehaviour:
   - {fileID: -8316928970572691745}
   - {fileID: -5584067063807265564}
   - {fileID: 3946429964192714058}
+  - {fileID: -2126227271144120210}
   EditorParameters:
   - {fileID: -4755925082688145374}
   - {fileID: -2199071914965700011}
@@ -663,7 +693,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639268976687430562
+  cacheTime: 639269210672315843
   SerializableEventsDict:
   - key: event:/SFX/Coin/CoinIdle
     index: 0
@@ -695,6 +725,10 @@ MonoBehaviour:
     index: 13
   - key: event:/Game State/CaveState
     index: 14
+  - key: event:/Ambience/Cave2
+    index: 15
+  - key: event:/Music/TutorialMusic
+    index: 16
 --- !u!114 &92015819632052104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +838,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12000
+--- !u!114 &2976974858906206092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Level1Music/layer_chooser
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: layer_chooser
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3265533267
+    data2: 2671205080
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3739824720243518931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,10 +1163,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Level 1.bank
   Name: Level 1
   StudioPath: bank:/Level 1
-  lastModified: 639268976687430562
+  lastModified: 639269210672315843
   FileSizes:
   - Name: Desktop
-    Value: 6041920
+    Value: 6316160
   Exists: 1
 --- !u!114 &7086763773334830894
 MonoBehaviour:
@@ -1136,6 +1194,32 @@ MonoBehaviour:
   - In
   - Out
   Exists: 1
+--- !u!114 &8445739962503365343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TutorialMusic/level1_area
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: level1_area
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3012197990
+    data2: 1685133433
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Area 1
+  - Area 2
+  Exists: 1
 --- !u!114 &8980076389035541340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,7 +1235,7 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639268975038837107
+  lastModified: 639269205619480588
   FileSizes:
   - Name: Desktop
     Value: 8482

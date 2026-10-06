@@ -1587,7 +1587,12 @@ MonoBehaviour:
         data1: 0
         data2: 0
   - Target: {fileID: 1754240611}
-    Params: []
+    Params:
+    - Name: level1_area
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
   TriggerEvent: 5
 --- !u!114 &147665926
 MonoBehaviour:
@@ -2824,7 +2829,12 @@ MonoBehaviour:
         data1: 0
         data2: 0
   - Target: {fileID: 1754240611}
-    Params: []
+    Params:
+    - Name: level1_area
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
   TriggerEvent: 5
 --- !u!114 &279831681
 MonoBehaviour:
@@ -5635,6 +5645,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
   CollisionTag: 
   Emitters:
+  - Target: {fileID: 147665927}
+    Params:
+    - Name: volume_on_off
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
   - Target: {fileID: 147665926}
     Params:
     - Name: volume_on_off
@@ -5930,7 +5947,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.63, y: 2.54, z: -9}
+  m_LocalPosition: {x: 0.43, y: -0.1, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101892,11 +101909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.63
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -251885,7 +251902,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754240606}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -251893,11 +251910,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1101341629
-      Data2: 1121761091
-      Data3: 370083741
-      Data4: -1369876380
-    Path: event:/Music/AdaptiveMusic
+      Data1: 860277574
+      Data2: 1116758943
+      Data3: -300995448
+      Data4: 1133246467
+    Path: event:/Music/Level1Music
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -251905,7 +251922,17 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   NonRigidbodyVelocity: 0
-  Params: []
+  Params:
+  - Name: level1_area
+    Value: 0
+    ID:
+      data1: 0
+      data2: 0
+  - Name: layer_chooser
+    Value: 0
+    ID:
+      data1: 0
+      data2: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -255414,7 +255441,7 @@ Transform:
   m_GameObject: {fileID: 1946717923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.63, y: 2.54, z: -9}
+  m_LocalPosition: {x: 0.43, y: -0.1, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
