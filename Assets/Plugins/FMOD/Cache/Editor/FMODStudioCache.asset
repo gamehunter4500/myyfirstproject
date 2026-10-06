@@ -432,10 +432,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639263906461167783
+  lastModified: 639268975038841365
   FileSizes:
   - Name: Desktop
-    Value: 2370
+    Value: 2414
   Exists: 1
 --- !u!114 &-2199071914965700011
 MonoBehaviour:
@@ -565,10 +565,11 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 5423660919682498717}
   MinDistance: 1
   MaxDistance: 20
-  Length: 18597
+  Length: 12000
 --- !u!114 &-263384669479270590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,6 +652,7 @@ MonoBehaviour:
   - {fileID: -9135833451360656832}
   - {fileID: -8316928970572691745}
   - {fileID: -5584067063807265564}
+  - {fileID: 3946429964192714058}
   EditorParameters:
   - {fileID: -4755925082688145374}
   - {fileID: -2199071914965700011}
@@ -661,7 +663,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -2722590046555352761}
   cacheVersion: 131860
-  cacheTime: 639263906461167783
+  cacheTime: 639268976687430562
   SerializableEventsDict:
   - key: event:/SFX/Coin/CoinIdle
     index: 0
@@ -822,6 +824,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1524
   Exists: 1
+--- !u!114 &3946429964192714058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Cave2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Cave2
+  Guid:
+    Data1: -2116626708
+    Data2: 1334540903
+    Data3: 1421691571
+    Data4: -912565542
+  Banks:
+  - {fileID: 7039610869780268161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8750
 --- !u!114 &4421531581795841433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,6 +927,32 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &5423660919682498717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave1/volume_on_off
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: volume_on_off
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3456077778
+    data2: 4263307422
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - On
+  - Off
   Exists: 1
 --- !u!114 &5638324333182692303
 MonoBehaviour:
@@ -1050,10 +1105,10 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Level 1.bank
   Name: Level 1
   StudioPath: bank:/Level 1
-  lastModified: 639263861948748381
+  lastModified: 639268976687430562
   FileSizes:
   - Name: Desktop
-    Value: 5921024
+    Value: 6041920
   Exists: 1
 --- !u!114 &7086763773334830894
 MonoBehaviour:
@@ -1096,7 +1151,7 @@ MonoBehaviour:
   Path: ../../FMOD/Projects/FmodIntegration1:MyProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639263906461160618
+  lastModified: 639268975038837107
   FileSizes:
   - Name: Desktop
     Value: 8482

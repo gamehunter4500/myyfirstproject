@@ -1474,8 +1474,10 @@ GameObject:
   - component: {fileID: 147665923}
   - component: {fileID: 147665922}
   - component: {fileID: 147665925}
+  - component: {fileID: 147665926}
+  - component: {fileID: 147665927}
   m_Layer: 0
-  m_Name: Area4 NewSoundscape (1)
+  m_Name: Area4.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1531,7 +1533,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.73252445, y: 0.71723527}
+  m_Offset: {x: -0.093803614, y: 0.43594408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1541,7 +1543,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.2062416, y: 1.5334274}
+  m_Size: {x: 0.553585, y: 0.970845}
   m_EdgeRadius: 0
 --- !u!4 &147665924
 Transform:
@@ -1587,6 +1589,68 @@ MonoBehaviour:
   - Target: {fileID: 1754240611}
     Params: []
   TriggerEvent: 5
+--- !u!114 &147665926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147665921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -608140890
+      Data2: 1311036591
+      Data3: -370012744
+      Data4: 1075859637
+    Path: event:/Ambience/Cave1
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &147665927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147665921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -2116626708
+      Data2: 1334540903
+      Data3: 1421691571
+      Data4: -912565542
+    Path: event:/Ambience/Cave2
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 6
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &147844362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2714,6 +2778,131 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {x: -1.2063255, y: 0}
   endPosition: {x: 1.3086131, y: 0}
+--- !u!1 &279831679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279831683}
+  - component: {fileID: 279831682}
+  - component: {fileID: 279831681}
+  - component: {fileID: 279831680}
+  m_Layer: 0
+  m_Name: Area5.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &279831680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279831679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
+  CollisionTag: Player
+  Emitters:
+  - Target: {fileID: 1754240612}
+    Params:
+    - Name: volume_on_off
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
+    - Name: wind_intensity
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
+  - Target: {fileID: 1754240611}
+    Params: []
+  TriggerEvent: 5
+--- !u!114 &279831681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279831679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioGlobalParameterTrigger
+  CollisionTag: Player
+  Parameter: Cave_Depth
+  TriggerEvent: 5
+  Value: 1
+--- !u!61 &279831682
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279831679}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.073721826, y: 0.07574022}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6166973, y: 0.5230241}
+  m_EdgeRadius: 0
+--- !u!4 &279831683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279831679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64.14, y: 3.91, z: 0}
+  m_LocalScale: {x: 10.900692, y: 6.424362, z: 3.3158}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291078489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5323,6 +5512,137 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4, y: 0.55}
   m_EdgeRadius: 0
+--- !u!1 &498874525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498874530}
+  - component: {fileID: 498874529}
+  - component: {fileID: 498874527}
+  - component: {fileID: 498874531}
+  m_Layer: 0
+  m_Name: 'Area5 '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &498874527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498874525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
+  CollisionTag: Player
+  Emitters:
+  - Target: {fileID: 1754240612}
+    Params:
+    - Name: volume_on_off
+      Value: 0
+      ID:
+        data1: 0
+        data2: 0
+    - Name: wind_intensity
+      Value: 0.3
+      ID:
+        data1: 0
+        data2: 0
+  - Target: {fileID: 1754240611}
+    Params: []
+  TriggerEvent: 5
+--- !u!61 &498874529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498874525}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.07372183, y: -0.28933132}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6166973, y: 0.33805442}
+  m_EdgeRadius: 0
+--- !u!4 &498874530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498874525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64.14, y: 3.03, z: 0}
+  m_LocalScale: {x: 10.900692, y: 6.424362, z: 3.3158}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498874531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498874525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
+  CollisionTag: 
+  Emitters:
+  - Target: {fileID: 147665926}
+    Params:
+    - Name: volume_on_off
+      Value: 1
+      ID:
+        data1: 0
+        data2: 0
+  TriggerEvent: 0
 --- !u!4 &500323780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
@@ -98837,7 +99157,7 @@ MonoBehaviour:
   - Target: {fileID: 1754240612}
     Params:
     - Name: wind_intensity
-      Value: 0.391
+      Value: 0.8
       ID:
         data1: 0
         data2: 0
@@ -100981,8 +101301,13 @@ MonoBehaviour:
   Emitters:
   - Target: {fileID: 1754240612}
     Params:
-    - Name: wind_intensity
+    - Name: volume_on_off
       Value: 0
+      ID:
+        data1: 0
+        data2: 0
+    - Name: wind_intensity
+      Value: 0.49
       ID:
         data1: 0
         data2: 0
@@ -248343,7 +248668,7 @@ MonoBehaviour:
   - Target: {fileID: 1754240612}
     Params:
     - Name: wind_intensity
-      Value: 0.391
+      Value: 0.79
       ID:
         data1: 0
         data2: 0
@@ -251613,7 +251938,7 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params:
   - Name: wind_intensity
-    Value: 0
+    Value: 0.5
     ID:
       data1: 0
       data2: 0
@@ -256375,7 +256700,7 @@ MonoBehaviour:
   - Target: {fileID: 1754240612}
     Params:
     - Name: wind_intensity
-      Value: 0.391
+      Value: 0.84
       ID:
         data1: 0
         data2: 0
@@ -257339,3 +257664,5 @@ SceneRoots:
   - {fileID: 2072162216}
   - {fileID: 824507046}
   - {fileID: 147665924}
+  - {fileID: 498874530}
+  - {fileID: 279831683}
